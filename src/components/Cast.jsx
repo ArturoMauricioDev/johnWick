@@ -6,8 +6,8 @@ export const Cast = ({ actor }) => {
       <div className="container">
         <img src={actor.img} alt={`Imagen del actor ${actor.name}`} />
       </div>
-      <span>{actor.name} </span>
-      <span>{actor.cast} </span>
+      <p>{actor.name} </p>
+      <p>{actor.cast} </p>
     </div>
   );
 };

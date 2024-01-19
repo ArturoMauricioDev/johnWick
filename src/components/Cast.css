@@ -2,9 +2,19 @@
     max-width: 60px;
 }
 
+.cast p {
+    margin: 0;
+    padding: 0;
+    font-size: 9px;
+}
+
 .container {
     display: flex;
     justify-content: center;
+}
+
+.container img {
+    border-radius: 15px;
 }
 
 .cast > span {
