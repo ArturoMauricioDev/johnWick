@@ -1,0 +1,12 @@
+.cast {
+    max-width: 60px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.cast > span {
+    font-size: 9px;
+}
