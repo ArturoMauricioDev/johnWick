@@ -1,13 +1,15 @@
-import {ImageCast} from  "./ImageCast";
-import img from "../assets/cartelera.json"
-import "./ImageCast.css"
+import { ImageCast } from "./ImageCast";
+import "./ImageCast.css";
 
-export const TopImage = () => {
-  return (
-    <div className="ImageContainer" >
-                {img.map((picture) => (
-                        <ImageCast poster = {picture} />
-                ))}
-    </div>
-  )
+export interface PropsTopImage {
+  imgPoster: string;
 }
+
+export const Porter = ({ imgPoster }: any) => {
+  console.log(imgPoster.imgPoster);
+  return (
+    <div className="ImageContainer">
+      <ImageCast poster={imgPoster.imgPoster} />
+    </div>
+  );
+};

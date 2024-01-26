@@ -1,13 +1,11 @@
-import './Description.css';
-import synopsis from "../assets/descriptions.json"
+import "./Description.css";
 import { DescriptionCast } from "./DescriptionCast";
 
-export const Resume = () => {
+export const Resume = ({ movie }: any) => {
+  const textMovie = movie.synopsis;
   return (
-        <div className="descriptionContainer">
-                {synopsis.map((textMovie) => (
-                        <DescriptionCast resume = {textMovie} />
-                ))}
-            </div>
-  )
-}
+    <div className="descriptionContainer">
+      <DescriptionCast resume={textMovie} />
+    </div>
+  );
+};

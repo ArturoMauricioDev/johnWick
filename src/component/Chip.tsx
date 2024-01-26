@@ -1,13 +1,13 @@
-import './Chip.css';
-import category from "../assets/categoria-john-wick.json"
+import "./Chip.css";
 import { ChipCast } from "./ChipCast";
 
-export const Chip = () => {
+export const Chip = ({ categories }: any) => {
+  const movieCategories = categories.category;
   return (
-        <div className="">
-                {category.map((clasification) => (
-                        <ChipCast kind = {clasification} />
-                ))}
-            </div>
-  )
-}
+    <div className="ChipContainer">
+      {movieCategories.map((category: string) => (
+        <ChipCast category={category} />
+      ))}
+    </div>
+  );
+};
